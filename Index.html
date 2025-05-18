@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagens</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/main.css">
+</head>
+<body>
+    <header>
+        <div class="custom-container">
+            <h1>World Travel</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Tours</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Rotas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Atrações</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+                    <button id="reserve-button" type="button" class="btn btn-secondary">Reserve já!</button>
+                </ul>
+            </nav>
+        </div>
+        <form id="booking-form" class="container">
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <label for="name"  class="form-label">Nome</label>
+                    <input id="name"  class="form-control" type="text">
+                </div>
+                <div class="col-md-4">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input id="email" class="form-control" type="email">
+                </div>
+                <div class="col-md-4">
+                    <label for="phone" class="form-label">Celular</label>
+                    <input id="phone" class="form-control" type="tel">
+                </div>
+                <div class="col-12 text-end">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </header>
+    <main>
+        <section id="controls" class="carousel slide container" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#controls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#controls" data-bs-slide-to="1" aria-current="true" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#controls" data-bs-slide-to="2" aria-current="true" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#controls" data-bs-slide-to="3" aria-current="true" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./Images/new-york-4352072_1280.jpg" class="d-block w-100 custom-carousel-img" alt="Nova York">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Nova York</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./Images/lisbon-8268810_1280.jpg" class="d-block w-100 custom-carousel-img" alt="Lisboa">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Lisboa</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./Images/janaki-temple-388863_1920.jpg" class="d-block w-100 custom-carousel-img" alt="Templo Jakani (Nepal)">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Templo Jakani - Nepal</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./Images//montmartre-7150549_1280.jpg" class="d-block w-100 custom-carousel-img" alt="Paris">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Templo de Montmartre - Paris</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#controls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#controls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+        <section class="destinos container my-5" aria-labelledby="'destinos-tittle">
+            <h2 class="mb-4">Nossos Destinos</h2>
+            <div class="row">
+                <article class="col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="./Images/bridge-7930004_1280.jpg" class="card-img" alt="">
+                        <div class="card-body">
+                            <h3 class="card-tittle">Nova Iorque</h3>
+                            <p class="card-text">A cidade que nunca dorme, repleta de arranha-céus icônicos como o Empire State, bairros multiculturais e o vibrante Central Park.</p>
+                            <a href="#" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="./Images/lisbon-4876136_1280.jpg" class="card-img" alt="">
+                        <div class="card-body">
+                            <h3 class="card-tittle">Lisboa</h3>
+                            <p class="card-text">Capital portuguesa charmosa, com suas colinas de azulejos coloridos, bondes históricos e miradouros que oferecem vistas de tirar o fôlego.</p>
+                            <a href="#" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="./Images/nepal-landscape-2388105_1920.jpg"  class="card-img" alt="">
+                        <div class="card-body">
+                            <h3 class="card-tittle">Nepal</h3>
+                            <p class="card-text">Terra dos Himalaias, perfeita para quem busca trilhas épicas, templos milenares e a cultura budista pulsante em Katmandu.</p>
+                            <a href="#" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="./Images/paris-2406492_1280.jpg" class="card-img" alt="">
+                        <div class="card-body">
+                            <h3 class="card-tittle">Paris</h3>
+                            <p class="card-text">A capital do romance, famosa pela Torre Eiffel, cafés aconchegantes, museus de classe mundial e a elegância de suas avenidas.</p>
+                            <a href="#" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </article>
+                <!--<article class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./Images/paris-2406492_1280.jpg" class="card-img" alt="">
+                        <div class="card-body">
+                            <h3 class="card-tittle">titulo</h3>
+                            <p class="card-text">text</p>
+                            <a href="#" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./Images/paris-2406492_1280.jpg" class="card-img" alt="">
+                        <div class="card-body">
+                            <h3 class="card-tittle">titulo</h3>
+                            <p class="card-text">text</p>
+                            <a href="#" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </article>-->
+            </div>
+        </section>
+        
+    </main>
+    <script src="./src/main.js"></script>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
